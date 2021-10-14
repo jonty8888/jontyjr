@@ -1,0 +1,47 @@
+<div class="product-page" *ngIf='product'>
+    <div class="grid">
+
+        <div class="col-6">
+          <jontyjr-ui-galley [images] = 'product.images' ></jontyjr-ui-galley>
+        </div>
+
+
+
+
+        <div class="col-6 product">
+            <h2 class='product-name'>{{product.name}}</h2>
+            <p class="product-desc">
+                {{product.description}}
+            </p>
+            <div class="product-rating"> 
+                <p-rating [(ngModel)]="product.rating" [cancel]='false' ></p-rating>
+
+            </div>
+
+            <div class="product-price">
+                {{product.price | currency : 'INR'}}
+                <span class='price-before'>{{product.price + 18}}</span>
+            </div>
+
+            <div class="product-qty">
+                <div class="field col-12 md-3 p-0">
+                   <label for="minmax-buttons">Quantity</label> <br>
+                    <p-inputNumber [(ngModel)]="qty" mode="decimal" [showButtons]="true" inputId="qty" [min]="1" [max]="100">
+                    </p-inputNumber>
+                </div>
+            </div>
+
+            <div class="product-actions">
+                <button pButton pRipple type="button" label="Buy now" class="p-button-rounded  mr-2"></button>
+                <button pButton pRipple type="button" label="Add to Cart" class="p-button-rounded" (click)="addToCart()"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid product-richDesc">
+        <div class="col-12">
+            <div [innerHTML]='product.richDescription'></div>
+        </div>
+        
+    </div>
+</div>

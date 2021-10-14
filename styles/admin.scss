@@ -1,0 +1,28 @@
+@import '~normalize.css/normalize.css';
+@import 'base/colors.scss';
+@import 'base/fonts.scss';
+@import 'base/mixnis.scss';
+//library
+
+@import'~primeicons/primeicons.css';
+  
+
+@import '~primeflex/primeflex.css';
+@import '~primeng/resources/themes/saga-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
+
+
+// after getting from  prime then updating fonts
+
+@import 'base/config.scss';
+
+
+//shared
+
+@import './apps/admin/shell.scss';
+@import './apps/admin/dashboard.scss';
+
+//libs
+
+@import './libs/ui/ui.scss';
+@import './libs/users/users.scss'

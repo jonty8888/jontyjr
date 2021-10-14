@@ -1,0 +1,30 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": false,
+        "experimentalDecorators": true,
+        "strictNullChecks": false,
+        "strictPropertyInitialization": false,
+        "noImplicitAny": false,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2017", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@env/*": ["environments/*"],
+            "@jontyjr/comps": ["libs/comps/src/index.ts"],
+            "@jontyjr/orders": ["libs/orders/src/index.ts"],
+            "@jontyjr/products": ["libs/products/src/index.ts"],
+            "@jontyjr/ui": ["libs/ui/src/index.ts"],
+            "@jontyjr/users": ["libs/users/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
+}
