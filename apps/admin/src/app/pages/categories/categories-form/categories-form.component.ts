@@ -63,6 +63,9 @@ export class CategoriesFormComponent implements OnInit {
      
     
         this.location.back()
+
+        
+        
   }
 
   private _updateCategory(category:Category){
