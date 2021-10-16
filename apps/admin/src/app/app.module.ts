@@ -42,6 +42,7 @@ import {FieldsetModule} from 'primeng/fieldset';
 import { RoutingModule } from './routing.module';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { NgxStripeModule } from 'ngx-stripe';
 
 const Ux_module = [
   CardModule,ToolbarModule,ButtonModule,TableModule,InputTextModule,ToastModule,ConfirmDialogModule,ColorPickerModule,

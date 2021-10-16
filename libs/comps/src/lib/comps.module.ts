@@ -22,6 +22,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import {InputMaskModule} from 'primeng/inputmask';
 import {DropdownModule} from 'primeng/dropdown';
 import { ThankyouComponent } from './pages/thankyou/thankyou.component';
+import { LoginComponent } from './pages/login/login.component';
  const routes : Routes =[
    {
      path : 'products',
@@ -48,6 +49,10 @@ import { ThankyouComponent } from './pages/thankyou/thankyou.component';
   {
     path : 'success',
     component : ThankyouComponent
+  },
+  {
+    path : 'login',
+    component: LoginComponent
   }
 
 
@@ -71,7 +76,8 @@ import { ThankyouComponent } from './pages/thankyou/thankyou.component';
       CartPageComponent,
       OrderSummaryComponent,
       CheckoutPageComponent,
-      ThankyouComponent
+      ThankyouComponent,
+      LoginComponent
     ],
     exports: [
       CatBannerComponent,
@@ -84,7 +90,8 @@ import { ThankyouComponent } from './pages/thankyou/thankyou.component';
       CartPageComponent,
       OrderSummaryComponent,
       CheckoutPageComponent,
-      ThankyouComponent
+      ThankyouComponent,
+      LoginComponent
     ]
 })
 export class CompsModule {}

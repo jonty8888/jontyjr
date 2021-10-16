@@ -2,11 +2,11 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '../../services/auth.service';
-import { LocalstorageService } from '../../services/localstorage.service';
+import { AuthService } from '../../../../../users/src/lib/services/auth.service';
+import { LocalstorageService } from '../../../../../users/src/lib/services/localstorage.service';
 
 @Component({
-  selector: 'users-login',
+  selector: 'jontyjr-login',
   templateUrl: './login.component.html',
   styles: [
   ]

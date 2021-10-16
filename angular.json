@@ -11,7 +11,7 @@
                     "builder": "@angular-devkit/build-angular:browser",
                     "outputs": ["{options.outputPath}"],
                     "options": {
-                        "aot": false,
+                       
                         "outputPath": "dist/apps/admin",
                         "index": "apps/admin/src/index.html",
                         "main": "apps/admin/src/main.ts",
@@ -173,8 +173,10 @@
                             ],
                             "fileReplacements": [
                                 {
-                                    "replace": "apps/ngshop/src/environments/environment.ts",
-                                    "with": "apps/ngshop/src/environments/environment.prod.ts"
+                                    "replace": "environments/environment.ts",
+                                    "with": "environments/environment.prod.ts"
+                                    
+                                  
                                 }
                             ],
                             "outputHashing": "all"
@@ -256,22 +258,7 @@
             "sourceRoot": "libs/orders/src",
             "prefix": "users",
             "architect": {
-                "build": {
-                    "builder": "@nrwl/angular:ng-packagr-lite",
-                    "outputs": ["dist/libs/orders"],
-                    "options": {
-                        "project": "libs/orders/ng-package.json"
-                    },
-                    "configurations": {
-                        "production": {
-                            "tsConfig": "libs/orders/tsconfig.lib.prod.json"
-                        },
-                        "development": {
-                            "tsConfig": "libs/orders/tsconfig.lib.json"
-                        }
-                    },
-                    "defaultConfiguration": "production"
-                },
+       
                 "test": {
                     "builder": "@nrwl/jest:jest",
                     "outputs": ["coverage/libs/orders"],
@@ -338,22 +325,6 @@
             "sourceRoot": "libs/users/src",
             "prefix": "users",
             "architect": {
-                "build": {
-                    "builder": "@nrwl/angular:ng-packagr-lite",
-                    "outputs": ["dist/libs/users"],
-                    "options": {
-                        "project": "libs/users/ng-package.json"
-                    },
-                    "configurations": {
-                        "production": {
-                            "tsConfig": "libs/users/tsconfig.lib.prod.json"
-                        },
-                        "development": {
-                            "tsConfig": "libs/users/tsconfig.lib.json"
-                        }
-                    },
-                    "defaultConfiguration": "production"
-                },
                 "test": {
                     "builder": "@nrwl/jest:jest",
                     "outputs": ["coverage/libs/users"],
